@@ -46,11 +46,12 @@ We are saying W could be any vector, not just unit vector.
 
 Margin = 2/||W||, whole task is to max margin. 
 
-### Loss -Minimization Hinge Loss:
+### Loss -Minimization - Hinge Loss:
 
 Logistic loss to minimize.
 Change Logistic to linear loss + regularization = Linear regression
 SVM ==> Hinge loss + regularization.
+
 
 
 
