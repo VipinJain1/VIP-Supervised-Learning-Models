@@ -35,6 +35,11 @@ Create a new var, @i such that
 @i =0 @i =0 if Yi ( W(t) Xi + b) >=1 this is correctly classfied $+ and $-.
 if @i>0 and equal to some units of distance away from correct hyperplane either of +ve plane or -ve plane in either direction.
 
+We want to minimize errrors or mis classification.  For incorreclty classified points my @i >0. 
+(W*,B*) = ArgMin(W to B) ||W|| /2 + C 1/n Sum(@i) , last C part is the loss. total deviation from good points.  C is the hyper parameter. If I increases, that means tendency to make mistakes reduces so I  tend to overfit my plane. 
+If C decreases, I have underfit model and this is called Soft margin SVM. that means we say we allow errors but try to reduce errors.
+In hard margin SVM, overfit model, no errors allowed.
+
 
 
 
