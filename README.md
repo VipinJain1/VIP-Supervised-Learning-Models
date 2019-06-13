@@ -31,6 +31,12 @@ in SVN, we just care about margin. Get the distance between plane $+ and $-, so 
 
 Try to make sure all the +ve points are above $+ plane and all -ve points are below $- plane. That will be a perfect case. This is called hard margin SVM.
 
+Create a new var, @i such that
+@i =0 @i =0 if Yi ( W(t) Xi + b) >=1 this is correctly classfied $+ and $-.
+if @i>0 and equal to some units of distance away from correct hyperplane either of +ve plane or -ve plane in either direction.
+
+
+
 
 
  
