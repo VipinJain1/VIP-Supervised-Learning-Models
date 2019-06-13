@@ -52,8 +52,11 @@ Logistic loss to minimize.
 Change Logistic to linear loss + regularization = Linear regression
 SVM ==> Hinge loss + regularization.
 
+### Dual Form of SVM:
+ToDo: Remember soft margin SVM and hard margin SVM.
+We learnt primal SVM problem earlier.  primal problem is equal to dual SVM problem.  Formula hard to write here. 
 
-
+### Kernalization:
 
 
 
