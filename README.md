@@ -29,7 +29,8 @@ $+ : W(t) x + b =1
 $- : w(t)x + b = -1
 in SVN, we just care about margin. Get the distance between plane $+ and $-, so Margin value = 2/||W||
 
-Try to make sure, all the +ve points are above $+ plane and all -ve points are below $- plane. That will be a perfect case.
+Try to make sure all the +ve points are above $+ plane and all -ve points are below $- plane. That will be a perfect case. This is called hard margin SVM.
+
 
 
  
