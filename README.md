@@ -40,6 +40,16 @@ We want to minimize errrors or mis classification.  For incorreclty classified p
 If C decreases, I have underfit model and this is called Soft margin SVM. that means we say we allow errors but try to reduce errors.
 In hard margin SVM, overfit model, no errors allowed.
 
+Question:  why +1 and -1 only on hyper plane??
+
+We are saying W could be any vector, not just unit vector.
+
+Margin = 2/||W||, whole task is to max margin. 
+
+
+
+
+
 
 
 
