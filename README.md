@@ -33,32 +33,38 @@ $- : w(t)x + b = -1  # for negative plane.
 
 in SVN, we just care about margin. Get the distance between plane $+ and $-, so Margin value = 2/||W||
 
-Try to make sure all the +ve points are above $+ plane and all -ve points are below $- plane. That will be a perfect case. This is called hard margin SVM.
+Try to make sure all the +ve points are above $+ plane and all -ve points are below $- plane. That will be a perfect case. This is called "Hard Margin SVM".
 
-Create a new var, @i such that
-@i =0 @i =0 if Yi ( W(t) Xi + b) >=1 this is correctly classfied $+ and $-.
+Create a new variable - @i such that
+
+@i =0 if Yi * (W(t) Xi + b) >=1 this is correctly classfied $+ (positive plane) and $- ( negative plane).
 if @i>0 and equal to some units of distance away from correct hyperplane either of +ve plane or -ve plane in either direction.
 
-We want to minimize errrors or mis classification.  For incorreclty classified points my @i >0. 
-(W*,B*) = ArgMin(W to B) ||W|| /2 + C 1/n Sum(@i) , last C part is the loss. total deviation from good points.  C is the hyper parameter. If I increases, that means tendency to make mistakes reduces so I  tend to overfit my plane. 
-If C decreases, I have underfit model and this is called Soft margin SVM. that means we say we allow errors but try to reduce errors.
-In hard margin SVM, overfit model, no errors allowed.
+We want to minimize errrors or mis classification.  For incorreclty classified points my @i >0.
+
+(W*,B*) = ArgMin(W to B) ||W|| /2 + C 1/n Sum(@i) , last C part is the loss. Total deviation from good points.  C is the hyper 
+parameter. 
+
+If I increases, that means tendency to make mistakes reduces so I  tend to overfit my plane. 
+If C decreases, I have underfit model and this is called "Soft margin SVM". "Soft margin SVM" means,  we allow errors but try to reduce overall errors.
+
+In hard margin SVM, overfit model, no errors are allowed.
 
 Question:  why +1 and -1 only on hyper plane??
 
-We are saying W could be any vector, not just unit vector.
+We are saying 'W' could be any vector, not just unit vector.
 
-Margin = 2/||W||, whole task is to max margin. 
+Margin = 2/||W||, whole task is to maximize margin. 
 
-### Loss -Minimization - Hinge Loss:
+### Loss-Minimization - Hinge Loss:
 
 Logistic loss to minimize.
-Change Logistic to linear loss + regularization = Linear regression
+Change Logistic to linear loss + regularization ==> Linear regression
 SVM ==> Hinge loss + regularization.
 
 ### Dual Form of SVM:
 ToDo: Remember soft margin SVM and hard margin SVM.
-We learnt primal SVM problem earlier.  primal problem is equal to dual SVM problem.  Formula hard to write here. 
+We learnt primal SVM problem earlier.  Primal problem is equal to dual SVM problem.  Formula hard to write here. 
 
 ### Kernalization:
 
